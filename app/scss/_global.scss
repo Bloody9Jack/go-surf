@@ -1,0 +1,257 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    background-color: #171919;
+    color: #fff;
+    text-transform: uppercase;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.headline-left {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.3px;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.5;
+    position: relative;
+    padding-left: 103px;
+    display: inline-block;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        bottom: 50%;
+        left: 0;
+    }
+}
+
+.first-arrows {
+    opacity: 1;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    cursor: pointer;
+    z-index: 4;
+    background-color: transparent;
+    border: none;
+}
+
+.slider__arrow-left {
+    right: 125px;
+}
+
+.header__aside-title {
+    pointer-events: none;
+}
+
+.header__aside {
+    pointer-events: none;
+}
+
+.slider-dotshead {
+    position: absolute;
+    bottom: 36px;
+    right: 80px;
+    max-width: 920px;
+    width: 100%;
+    color: #fff;
+    .slick-current {
+        .dots-box {
+            border-top: 4px solid $green;
+        }
+    }
+}
+
+.dots-box {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    align-items: center;
+    border-top: 4px solid #fff;
+    padding-top: 6px;
+    ;
+}
+
+.dots-box__number {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+}
+
+.dots-box__name {
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.title {
+    position: absolute;
+    font-weight: 800;
+    font-size: 80px;
+    left: 200px;
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $green;
+        height: 1px;
+        width: 80px;
+        top: 0;
+        right: 0;
+    }
+    span {
+        font-weight: 800;
+        font-size: 200px;
+        color: rgba( #fff, 0.02);
+        position: absolute;
+        transform: translateX(-250px);
+        pointer-events: none;
+    }
+}
+
+.descr {
+    display: inline-block;
+    &__head {
+        font-weight: 800;
+        font-size: 40px;
+        span {
+            font-weight: 100;
+        }
+    }
+}
+
+.headline-right {
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 7.3px;
+    padding-right: 103px;
+    color: #fff;
+    opacity: 0.5;
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        bottom: 50%;
+        right: 0;
+    }
+}
+
+.slick-content {
+    z-index: 999;
+}
+
+.quantity {
+    display: inline-block;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity input {
+    width: 54px;
+    height: 42px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+
+.quantity input:focus {
+    outline: 0;
+}
+
+.quantity-nav {
+    float: left;
+    position: static;
+    height: 42px;
+}
+
+.quantity-button {
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.quantity-button.quantity-up {
+    position: absolute;
+    height: 50%;
+    top: 45px;
+    right: 0;
+}
+
+.quantity-button.quantity-down {
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    height: 50%;
+}
+
+.star-list {
+    display: flex;
+    align-items: center;
+    li {
+        display: inline-block;
+    }
+    img {
+        position: static;
+    }
+}
+
+section {
+    margin-top: 200px;
+}

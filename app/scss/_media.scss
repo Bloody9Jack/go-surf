@@ -1,0 +1,95 @@
+    @media (max-width:1440px) {
+        .logo {
+            img {
+                width: 100px;
+            }
+        }
+        .header__locathion {
+            margin-top: 40px;
+            &::before {
+                left: 0%;
+            }
+        }
+        .slider-item__info-title {
+            font-size: 60px;
+            line-height: 68px;
+        }
+        .slider-item__info-suptitle {
+            font-size: 30px;
+        }
+        .header__search {
+            margin-top: 45px;
+            margin-bottom: 50px;
+        }
+        .menu__list {
+            li {
+                margin-bottom: 60px;
+            }
+        }
+        .header__arrows {
+            left: 140px;
+        }
+    }
+    
+    @media (max-width:1360px) {
+        .header__aside {
+            height: 105px;
+            text-align: left;
+            display: flex;
+            background-color: rgba(#fff, 0.1);
+            &::before {
+                display: none;
+            }
+        }
+        .menu {
+            margin-top: -50px;
+            display: flex;
+            align-items: center;
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto;
+                text-align: center;
+                justify-content: center;
+                margin-bottom: -15px;
+            }
+            img {
+                margin-bottom: -13px;
+            }
+        }
+        .menu__list {
+            text-align: center;
+            li {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+            a {
+                padding: 15px;
+            }
+        }
+        .header__search {
+            padding: 33px 15px 15px;
+            margin-top: -7px;
+        }
+        .header__date {
+            justify-content: unset;
+            align-items: unset;
+            margin: 0px 15px 0
+        }
+        .header__locathion {
+            margin-top: 32px;
+        }
+    }
+    
+    @media (max-width:1340px) {
+        .header__map {
+            svg {
+                width: 600px;
+                height: 500px;
+            }
+        }
+        .header__aside {
+            padding-right: 25px;
+        }
+    }

@@ -1,0 +1,107 @@
+.header__arrows {
+    animation-name: arrows;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: alternate-reverse;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+}
+
+@keyframes arrows {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px) scale(1.1);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(10px) scale(1.25);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10px) scale(1.1);
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(10px) scale(1.25);
+    }
+}
+
+.header__map-line {
+    animation-name: line;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes line {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+}
+
+.elipse-1 {
+    animation-name: elipse-1;
+    animation-duration: 1s;
+    animation-duration: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes elipse-1 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.elipse-2 {
+    animation-name: elipse-2;
+    animation-duration: 2s;
+    animation-duration: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes elipse-2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.elipse-3 {
+    animation-name: elipse-3;
+    animation-duration: 3s;
+    animation-duration: alternate-reverse;
+    animation-timing-function: linear;
+}
+
+@keyframes elipse-3 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
